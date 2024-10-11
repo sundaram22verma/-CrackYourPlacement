@@ -1,9 +1,6 @@
 # Arsh DSA Sheet || 45 Day DSA challenge ||
 # Day 1
 
-# Problem - Sort Colors
-# Solution - 
-
 class Solution {
 
     private void swap(int arr[], int pos1, int pos2){
