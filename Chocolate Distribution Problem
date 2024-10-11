@@ -2,7 +2,6 @@ class Solution
 {
     public long findMinDiff (ArrayList<Integer> a, int n, int m)
     {
-        // your code here
         Collections.sort(a);
         
         long min_diff = Long.MAX_VALUE;
