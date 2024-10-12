@@ -1,0 +1,19 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        // Check if prices array is null or empty
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+
+        int totalProfit = 0;
+
+        // Loop through prices to calculate total profit
+        for (int i = 1; i < prices.length; i++) {
+            // If the current price is greater than the previous price, it's a profit
+            if (prices[i] > prices[i - 1]) {
+                totalProfit += prices[i] - prices[i - 1]; // Accumulate profit
+            }
+        }
+        return totalProfit; // Return the total profit
+    }
+}
